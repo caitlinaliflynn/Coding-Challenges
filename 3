@@ -1,0 +1,18 @@
+function LongestWord(sen) { 
+    let wordArray = sen.match(/\w+/gi);
+    let longest = 0; 
+    let word = undefined; 
+    for(let i = 0; i < wordArray.length; i++){
+    if(wordArray[i].length > longest){
+      word = wordArray[i];
+      longest = word.length;
+    }
+  }
+
+  return word; 
+  // code goes here   
+
+}
+   
+// keep this function call here 
+console.log(LongestWord(readline()));
